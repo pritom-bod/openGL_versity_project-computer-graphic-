@@ -28,7 +28,7 @@ void drawHouse() {
     glEnd();
 
     // house full
-    glColor3f(0.2f, 0.2f, 0.2f);
+    glColor3f(0.8f, 0.33f, 0.0f);
     glBegin(GL_POLYGON);
     glVertex2f(-9.0f, 2.0f); 
     glVertex2f(-1.0f, 2.0f);  
@@ -37,7 +37,7 @@ void drawHouse() {
     glEnd();
 
     // tringle home
-    glColor3f(1.0f, 1.0f, 0.0f);
+    glColor3f(0.2f, 0.2f, 0.2f);
     glBegin(GL_TRIANGLES);
     glVertex2f(0.0f, 2.0f);  
     glVertex2f(-10.0f, 2.0f);   
@@ -45,7 +45,7 @@ void drawHouse() {
     glEnd();
 
     // door
-    glColor3f(1.0f, 1.0f, 0.0f);
+    glColor3f(0.85f, 0.65f, 0.13f);
     glBegin(GL_POLYGON);
     glVertex2f(-6.0f,0.0f);
     glVertex2f(-6.0f,-3.0f);
@@ -54,7 +54,7 @@ void drawHouse() {
     glEnd();
 
     //window
-    glColor3f(1.0f, 1.0f, 0.0f);
+    glColor3f(0.85f, 0.65f, 0.13f);
     glBegin(GL_POLYGON);
     glVertex2f(-8.5f, 0.0f);
     glVertex2f(-8.5f, -2.0f);
@@ -63,7 +63,7 @@ void drawHouse() {
     glEnd();
 
     //windows
-    glColor3f(1.0f, 1.0f, 0.0f);
+    glColor3f(0.85f, 0.65f, 0.13f);
     glBegin(GL_POLYGON);
     glVertex2f(-3.0f, 0.0f);
     glVertex2f(-1.5f, 0.0f);
