@@ -436,6 +436,132 @@ void drawHouse() {
         glVertex2f(light4X + x, light4Y + y);
     }
     glEnd();
+
+    //road line
+    glColor3f(1.0f, 1.0f, 1.0f);
+    glBegin(GL_POLYGON);
+    glVertex2f(-10.0f, -7.4f);
+    glVertex2f(-10.0f, -7.6f);
+    glVertex2f(-7.0f, -7.6f);
+    glVertex2f(-7.0f, -7.4f);
+    glEnd();
+
+    //2
+    //road line
+    glColor3f(1.0f, 1.0f, 1.0f);
+    glBegin(GL_POLYGON);
+    glVertex2f(-5.0f, -7.4f);
+    glVertex2f(-5.0f, -7.6f);
+    glVertex2f(-2.0f, -7.6f);
+    glVertex2f(-2.0f, -7.4f);
+    glEnd();
+    
+    //3
+    glColor3f(1.0f, 1.0f, 1.0f);
+    glBegin(GL_POLYGON);
+    glVertex2f(0.0f, -7.4f);
+    glVertex2f(0.0f, -7.6f);
+    glVertex2f(3.0f, -7.6f);
+    glVertex2f(3.0f, -7.4f);
+    glEnd();
+
+    //4
+    glColor3f(1.0f, 1.0f, 1.0f);
+    glBegin(GL_POLYGON);
+    glVertex2f(5.0f, -7.4f);
+    glVertex2f(5.0f, -7.6f);
+    glVertex2f(8.0f, -7.6f);
+    glVertex2f(8.0f, -7.4f);
+    glEnd();
+
+    //5
+    glColor3f(1.0f, 1.0f, 1.0f);
+    glBegin(GL_POLYGON);
+    glVertex2f(9.5f, -7.4f);
+    glVertex2f(9.5f, -7.6f);
+    glVertex2f(12.0f, -7.6f);
+    glVertex2f(12.0f, -7.4f);
+    glEnd();
+
+    // bus 
+    glColor3f(1.0f, 0.27f, 0.0f);
+    glBegin(GL_POLYGON);
+    glVertex2f(-5.0f, -8.0f);
+    glVertex2f(0.0f, -8.0f);
+    glVertex2f(0.0f, -7.0f);
+    glVertex2f(-5.0f, -7.0f);
+    glEnd();
+
+    glColor3f(1.0f, 0.27f, 0.0f); //gray
+    glBegin(GL_POLYGON);
+    glVertex2f(-5.0f, -5.5f);
+    glVertex2f(-5.0f, -7.0f);
+    glVertex2f(0.0f, -7.0f);
+    glVertex2f(-0.6f, -5.5f);
+    glEnd();
+    
+    // bus window
+    glColor3f(1.0f, 1.0f, 1.0f);
+    glBegin(GL_POLYGON);
+    glVertex2f(-4.8f, -6.2f);
+    glVertex2f(-4.8f, -6.8f);
+    glVertex2f(-4.2f, -6.8f);
+    glVertex2f(-4.2f, -6.2f);
+    glEnd();
+
+    glColor3f(1.0f, 1.0f, 1.0f);
+    glBegin(GL_POLYGON);
+    glVertex2f(-3.8f, -6.2f);
+    glVertex2f(-3.8f, -6.8f);
+    glVertex2f(-3.2f, -6.8f);
+    glVertex2f(-3.2f, -6.2f);
+    glEnd();
+
+    glColor3f(1.0f, 1.0f, 1.0f);
+    glBegin(GL_POLYGON);
+    glVertex2f(-2.8f, -6.2f);
+    glVertex2f(-2.8f, -6.8f);
+    glVertex2f(-2.2f, -6.8f);
+    glVertex2f(-2.2f, -6.2f);
+    glEnd();
+
+    glColor3f(1.0f, 1.0f, 1.0f);
+    glBegin(GL_POLYGON);
+    glVertex2f(-1.8f, -6.2f);
+    glVertex2f(-1.8f, -6.8f);
+    glVertex2f(-1.2f, -6.8f);
+    glVertex2f(-1.2f, -6.2f);
+    glEnd();
+
+    // chaka
+     glColor3f(0.1f, 0.1f, 0.1f); // Black soil
+     float chaka1X = -3.8f, chaka1Y = -8.0f, chaka1Radius = .6f;
+    glBegin(GL_TRIANGLE_FAN);
+    glVertex2f(chaka1X, chaka1Y);
+    for (int i = 0; i <= 100; i++) {
+        float angle = i * 2.0f * 3.14159f / 100;
+        float x = chaka1Radius * cos(angle);
+        float y = chaka1Radius * sin(angle);
+        glVertex2f(chaka1X + x, chaka1Y + y);
+
+    }
+    glEnd();
+
+    //chaka 2
+     glColor3f(0.1f, 0.1f, 0.1f); // Black soil
+     float chaka2X = -1.2f, chaka2Y = -8.0f, chaka2Radius = .6f;
+    glBegin(GL_TRIANGLE_FAN);
+    glVertex2f(chaka2X, chaka2Y);
+    for (int i = 0; i <= 100; i++) {
+        float angle = i * 2.0f * 3.14159f / 100;
+        float x = chaka2Radius * cos(angle);
+        float y = chaka2Radius * sin(angle);
+        glVertex2f(chaka2X + x, chaka2Y + y);
+
+    }
+    glEnd();
+
+    
     
      
 
